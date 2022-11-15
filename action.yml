@@ -1,5 +1,5 @@
 name: Additional Tags
 description: Create major and minor git tags from the last tag
 runs:
-  using: node12
+  using: node16
   main: index.js
