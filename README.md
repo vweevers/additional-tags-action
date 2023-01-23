@@ -16,8 +16,8 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: vweevers/additional-tags-action@v1
+      - uses: actions/checkout@v3
+      - uses: vweevers/additional-tags-action@v2
 ```
 
 If your tag is `v2.4.8` (for example) then this action will create 2 additional tags (`v2` and `v2.4`) and push them to GitHub, replacing existing tags. If the tag is a prerelease (not x.x.x) or not prefixed with `v` then nothing happens.
